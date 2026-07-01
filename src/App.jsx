@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import stork from "./assets/stork-ai.png";
-import music from "./assets/ege.mp3";
+import music from "./assets/doga.mp3";
 
 const TARGET = new Date("2026-11-18T09:00:00");
 
@@ -315,12 +315,12 @@ export default function App() {
 
   const handleEnter = () => {
     setIsOpening(true);
-    // if (audioRef.current) {
-    //   audioRef.current
-    //     .play()
-    //     .then(() => setIsPlaying(true))
-    //     .catch((err) => console.log("Müzik engellendi:", err));
-    // }
+    if (audioRef.current) {
+      audioRef.current
+        .play()
+        .then(() => setIsPlaying(true))
+        .catch((err) => console.log("Müzik engellendi:", err));
+    }
     setTimeout(() => setHasEntered(true), 1600);
   };
 
@@ -610,7 +610,6 @@ export default function App() {
             boxShadow: "0 4px 15px #e090b030",
             fontSize: 16,
             transition: "transform 0.2s",
-            display: "none",
           }}
           onMouseEnter={(e) => (e.currentTarget.style.transform = "scale(1.1)")}
           onMouseLeave={(e) => (e.currentTarget.style.transform = "scale(1)")}
