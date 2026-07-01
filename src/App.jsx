@@ -724,7 +724,7 @@ export default function App() {
               textAlign: "center",
             }}
           >
-            12 · 09 · 2026 · Tahmini Doğum Tarihi
+            18 · 11 · 2026 · Tahmini Doğum Tarihi
           </div>
 
           <div
